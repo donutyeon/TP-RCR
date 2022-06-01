@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rania/ontologies/2022/4/Metro"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rania/ontologies/2022/4/Metro">
+    <Prefix name="" IRI="http://www.semanticweb.org/rania/ontologies/2022/4/Metro"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-4" IRI="http://www.semanticweb.org/rania/ontologies/2022/4/untitled-ontology-4#"/>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Couleur"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Jaune"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Ligne"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:PetitReseau"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Reseau"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:ReseauDense"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Rouge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:StationEchange"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:StationJV"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRJ"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRV"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Stj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Str"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Stv"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Terminus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-4:Vert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:suivant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:BONOLA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:CROCETTA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:DUOMO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:MILANO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:PASTEUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:ROVERETO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:S.DONATO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:ZARA"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:Ligne"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="12">
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="30">
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:PetitReseau"/>
+        <ObjectMaxCardinality cardinality="6">
+            <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+            <Class abbreviatedIRI="untitled-ontology-4:Ligne"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:ReseauDense"/>
+        <ObjectMinCardinality cardinality="20">
+            <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+            <Class abbreviatedIRI="untitled-ontology-4:Ligne"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:StationEchange"/>
+        <Class abbreviatedIRI="untitled-ontology-4:StationJV"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:StationEchange"/>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRJ"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:StationEchange"/>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRV"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:StationJV"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Jaune"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Vert"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRJ"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Jaune"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Rouge"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRV"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Rouge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Vert"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:Stj"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+            <Class abbreviatedIRI="untitled-ontology-4:Jaune"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:Str"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+            <Class abbreviatedIRI="untitled-ontology-4:Rouge"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:Stv"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+            <Class abbreviatedIRI="untitled-ontology-4:Vert"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="untitled-ontology-4:Terminus"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="untitled-ontology-4:suivant"/>
+                <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Couleur"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Jaune"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Couleur"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Ligne"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:PetitReseau"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Reseau"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Reseau"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:ReseauDense"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Reseau"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Rouge"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Couleur"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:StationEchange"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:StationJV"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRJ"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRV"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Stj"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Str"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Stv"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Terminus"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="untitled-ontology-4:Vert"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Couleur"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:Str"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:BONOLA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:Stj"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:CROCETTA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:StationRJ"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:DUOMO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:Reseau"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:MILANO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:PASTEUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:ROVERETO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-4:Terminus"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:S.DONATO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+            <Class abbreviatedIRI="untitled-ontology-4:Rouge"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:ZARA"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:suivant"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:PASTEUR"/>
+        <NamedIndividual abbreviatedIRI="untitled-ontology-4:ROVERETO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Reseau"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:suivant"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Couleur"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:composé"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Ligne"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-4:suivant"/>
+        <Class abbreviatedIRI="untitled-ontology-4:Station"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="untitled-ontology-4:a_couleur"/>
+    </FunctionalDataProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

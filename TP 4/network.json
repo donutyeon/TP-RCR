@@ -1,0 +1,23 @@
+{
+    "nodes":[
+        {"id":"5d544bda-7d61-44dd-9609-ca47a5fb12d3","x":-245,"y":-138.5,"label":"Bird","color":null,"borderWidth":2,"M1":false,"M2":false},
+        {"id":"2bc4d46e-c5eb-41ce-89b9-ef2ac8a5e78d","x":124,"y":-105.5,"label":"Fly"},
+        {"id":"4f34c1a9-c93a-4f52-bc9f-6c7bcdf16b54","x":104,"y":-137.5,"label":"ostriches","color":null,"borderWidth":2,"M1":false,"M2":false},
+        {"id":"b49b7f0b-4323-4ee5-92b6-9e426691170c","x":-271,"y":-86.5,"label":"Owl","color":null,"borderWidth":2,"M1":false,"M2":false},
+        {"id":"b34850b0-27db-4f5f-9b39-a121e824b9dc","x":-104.308082532919,"y":-226.8035367778998,"label":"Eagle"},
+        {"id":"5f13a1c1-52ad-4736-82f2-e5fcdc3c2488","x":-327.308082532919,"y":-144.8035367778998,"label":"Animal"},
+        {"id":"e84c1495-6157-434c-8873-60eda57a98b3","x":80.691917467081,"y":202.1964632221002,"label":"action"}],
+        
+    "edges":[
+        {"from":"5d544bda-7d61-44dd-9609-ca47a5fb12d3","to":"2bc4d46e-c5eb-41ce-89b9-ef2ac8a5e78d","label":"can","edge_type":"Most",
+            "arrows":{"to":{"enabled":true,"type":"vee"}},"color":"#978dde","id":"ac85f547-1fec-45d9-a5e6-84a472be8ece"},
+        {"from":"4f34c1a9-c93a-4f52-bc9f-6c7bcdf16b54","to":"5d544bda-7d61-44dd-9609-ca47a5fb12d3","label":"is a","edge_type":"All",
+            "arrows":{"to":true},"id":"ef43864b-da8c-4a9e-ac60-b70c58abde3c","color":null,"width":null},
+        {"from":"b49b7f0b-4323-4ee5-92b6-9e426691170c","to":"5d544bda-7d61-44dd-9609-ca47a5fb12d3","label":"is a","edge_type":"All",
+            "arrows":{"to":true},"id":"5ee12038-85c2-4670-95eb-85e01a169633","color":null,"width":null},
+        {"from":"4f34c1a9-c93a-4f52-bc9f-6c7bcdf16b54","to":"2bc4d46e-c5eb-41ce-89b9-ef2ac8a5e78d","label":"can","edge_type":"Not","arrows":{"to":true},"color":"#ee3057","id":"4e5c9556-131b-45f8-8660-06f103c1eb0e"},
+        {"from":"b34850b0-27db-4f5f-9b39-a121e824b9dc","to":"5d544bda-7d61-44dd-9609-ca47a5fb12d3","label":"is a","edge_type":"All","arrows":{"to":true},"id":"7a356fcd-fa6b-48c4-a3b9-fb2074b23265"},
+        {"from":"5d544bda-7d61-44dd-9609-ca47a5fb12d3","to":"5f13a1c1-52ad-4736-82f2-e5fcdc3c2488","label":"is a","edge_type":"All","arrows":{"to":true},"id":"fa0bef4e-aecd-401d-9931-d9f14c47c03e"},
+        {"from":"2bc4d46e-c5eb-41ce-89b9-ef2ac8a5e78d","to":"e84c1495-6157-434c-8873-60eda57a98b3","label":"is a","edge_type":"All","arrows":{"to":true},"id":"f297ec85-a21e-45c2-925b-fcc855489859"}]
+
+}
